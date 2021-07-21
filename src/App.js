@@ -7,11 +7,11 @@ import Update from './views/Update';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <Home path="/" />
-        <OneProduct path="/product/1" />
-        <Update path="/product/update/1" />
+        <OneProduct path="/product/:_id" />
+        <Update path="/product/update/:_id" />
       </Router>
     </div>
   );
